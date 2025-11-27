@@ -186,6 +186,7 @@ a {
   display: flex;
   gap: 40px;
 }
+
 .contact-link {
   color: var(--slate);
   font-size: 16px;
@@ -197,6 +198,17 @@ a {
   color: var(--hover);
 }
 
+/* планшет: контакти в стовпчик */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-link {
+    font-size: 12px;
+  }
+}
 /* на планшеті/десктопі додаємо відступ логотипу */
 @media screen and (min-width: 768px) {
   .logo {
@@ -329,7 +341,7 @@ a {
   }
 
   .features-title {
-    font-size: 20px;
+    font-size: 36px;
     line-height: 1.2;
   }
 }
@@ -445,6 +457,7 @@ a {
 
   .team-item {
     width: calc((100% - 24px) / 2);
+    max-width: 264px;
   }
 }
 
@@ -694,6 +707,22 @@ a {
 .subscribe-icon {
   margin-left: 16px;
   fill: var(--white);
+}
+
+/* футер – мобільна версія */
+@media screen and (max-width: 767px) {
+  .footer-wrap {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .subscribe-form {
+    align-items: center;
+  }
 }
 
 /* footer – tablet */
