@@ -1127,16 +1127,24 @@ body.modal-open {
     width: 100%;
   }
 
-  .subscribe-form {
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
 
-  .subscribe-input {
-    width: 100%;
-    max-width: 264px;
-  }
+.subscribe-input {
+  width: 100%;
+  max-width: 398px;
+}
+
+.subscribe-btn {
+  width: auto;
+  padding: 12px 24px;
+  min-width: 165px;
+}
+
 
   .subscribe-btn {
     width: 165px;
