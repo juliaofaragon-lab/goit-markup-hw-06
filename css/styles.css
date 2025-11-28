@@ -751,6 +751,29 @@ a {
   }
 }
 
+/* планшет: 768–1157px */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  /* contacts в хедері колонкою + менший шрифт */
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-link {
+    font-size: 12px;
+  }
+
+  /* h3 у другій секції (features) — 36px як у макеті */
+  .features-title {
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  /* текст під заголовком — жирний тільки на планшеті */
+  .features-text {
+    font-weight: 500;
+  }
+}
 
 /* footer – desktop */
 @media screen and (min-width: 1158px) {
