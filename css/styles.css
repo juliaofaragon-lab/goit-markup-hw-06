@@ -132,7 +132,7 @@ a {
 
 .logo {
   display: inline-block;
-  margin-right: 0; /* базово без відступу, щоб не здувалося на мобілці */
+  margin-right: 0; 
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -1101,7 +1101,39 @@ body.modal-open {
   .menu-toggle {
     display: inline-flex;
   }
+
+  .footer-wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 72px;
+  }
+
+  .footer-brand {
+    margin-right: 0;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-subscribe {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .subscribe-input {
+    width: 100%;
+    max-width: 264px;
+  }
 }
+
 
 /* планшет+ */
 @media screen and (min-width: 768px) {
@@ -1116,6 +1148,30 @@ body.modal-open {
   .nav-list,
   .contacts {
     display: flex;
+  }
+}
+
+/* планшет: хедер і features */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  /* contacts-list колонкою + gap 12 */
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* на планшеті шрифт контактів 12px */
+  .contact-link {
+    font-size: 12px;
+  }
+
+  /* h3 у другій секції 36px на планшеті */
+  .features-title {
+    font-size: 36px;
+  }
+
+  /* feautures-text жирний на планшеті */
+  .features-text {
+    font-weight: 500;
   }
 }
 
