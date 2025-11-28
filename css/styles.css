@@ -1093,6 +1093,10 @@ body.modal-open {
 
 /* мобілка */
 @media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+
   .nav-list,
   .contacts {
     display: none;
@@ -1111,6 +1115,7 @@ body.modal-open {
 
   .footer-brand {
     margin-right: 0;
+    text-align: center;
   }
 
   .footer-socials {
@@ -1131,6 +1136,10 @@ body.modal-open {
   .subscribe-input {
     width: 100%;
     max-width: 264px;
+  }
+
+  .subscribe-btn {
+    width: 165px;
   }
 }
 
