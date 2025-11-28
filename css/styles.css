@@ -696,28 +696,61 @@ a {
   fill: var(--white);
 }
 
-/* footer – tablet */
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+  .nav-list,
+  .contacts {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+  }
+
+  /* центруємо заголовки у другій секції (features) */
+  .features-title {
+    text-align: center;
+  }
+
+  /* центруємо футер на мобілці */
+  .footer {
+    text-align: center;
+  }
+
   .footer-wrap {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 72px 24px;
-    align-items: baseline;
-  }
-
-  .footer-subscribe {
-    margin-left: 0;
-  }
-
-  .subscribe-form {
-    flex-direction: row;
     align-items: center;
   }
 
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-subscribe {
+    width: 100%;
+  }
+
+  /* форма підписки на мобілці */
+  .subscribe-form {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;          /* інпут тягнеться на всю ширину */
+  }
+
   .subscribe-input {
-    width: 264px;
+    width: 100%;                  /* поле повністю по ширині контейнера */
+    max-width: 100%;              /* щоб не обрізалось 398px */
+  }
+
+  .subscribe-btn {
+    width: 165px;                 /* кнопка менша за інпут */
+    align-self: center;           /* центруємо кнопку */
+    padding: 12px 24px;
   }
 }
+
 
 /* footer – desktop */
 @media screen and (min-width: 1158px) {
