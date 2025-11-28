@@ -328,15 +328,9 @@ a {
     width: calc((100% - 24px) / 2);
   }
 
-  /* h3 = 36px на планшеті */
   .features-title {
-    font-size: 36px;
-    line-height: 1.11;
-  }
-
-  /* текст жирний тільки з планшета (потім переопреділимо на десктопі) */
-  .features-text {
-    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
   }
 }
 
@@ -366,11 +360,6 @@ a {
   .features-title {
     font-size: 20px;
     line-height: 1.2;
-  }
-
-  /* повертаємо нормальний вага тексту на десктопі */
-  .features-text {
-    font-weight: 400;
   }
 }
 
@@ -1113,7 +1102,12 @@ body.modal-open {
     display: inline-flex;
   }
 
-  /* центрований футер та subscribe на мобілці */
+  /* центруємо заголовки у другій секції (features) */
+  .features-title {
+    text-align: center;
+  }
+
+  /* центруємо футер на мобілці */
   .footer {
     text-align: center;
   }
@@ -1132,15 +1126,13 @@ body.modal-open {
 
   .footer-subscribe {
     width: 100%;
-    margin-left: 0;
   }
 
   .subscribe-form {
-    flex-direction: column;
     align-items: center;
-    gap: 16px;
   }
 
+  /* різний розмір для інпута і кнопки Subscribe */
   .subscribe-input {
     width: 100%;
     max-width: 398px;
@@ -1149,6 +1141,7 @@ body.modal-open {
   .subscribe-btn {
     width: auto;
     min-width: 165px;
+    padding: 12px 24px;
   }
 }
 
@@ -1165,17 +1158,5 @@ body.modal-open {
   .nav-list,
   .contacts {
     display: flex;
-  }
-}
-
-/* ТІЛЬКИ планшет: contacts-list колонкою, шрифт 12px */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  .contacts-list {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .contact-link {
-    font-size: 12px;
   }
 }
