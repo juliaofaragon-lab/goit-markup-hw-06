@@ -775,6 +775,58 @@ a {
   }
 }
 
+/* Мобільна адаптація футера */
+@media screen and (max-width: 767px) {
+
+  /* Центруємо весь футер */
+  .footer {
+    text-align: center;
+  }
+
+  .footer-wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 72px;
+  }
+
+  .footer-brand {
+    margin-right: 0;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  /* --- Форма підписки --- */
+  .footer-subscribe {
+    width: 100%;
+    max-width: 398px;
+    margin: 0 auto;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+  }
+
+  /* Довгий інпут */
+  .subscribe-input {
+    width: 100%;
+    max-width: 398px;
+    height: 40px;
+  }
+
+  /* Кнопка трохи коротша */
+  .subscribe-btn {
+    width: 165px;
+    height: 40px;
+  }
+}
+
 /* footer – desktop */
 @media screen and (min-width: 1158px) {
   .footer {
