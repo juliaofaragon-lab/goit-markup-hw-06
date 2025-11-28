@@ -696,134 +696,26 @@ a {
   fill: var(--white);
 }
 
-@media screen and (max-width: 767px) {
-  .nav-list,
-  .contacts {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: inline-flex;
-  }
-
-  /* центруємо заголовки у другій секції (features) */
-  .features-title {
-    text-align: center;
-  }
-
-  /* центруємо футер на мобілці */
-  .footer {
-    text-align: center;
-  }
-
+/* footer – tablet */
+@media screen and (min-width: 768px) {
   .footer-wrap {
-    align-items: center;
-  }
-
-  .footer-brand {
-    text-align: center;
-  }
-
-  .footer-socials {
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    align-items: baseline;
   }
 
   .footer-subscribe {
-    width: 100%;
-  }
-
-  /* форма підписки на мобілці */
-  .subscribe-form {
-    flex-direction: column;
-    gap: 16px;
-    align-items: stretch;          /* інпут тягнеться на всю ширину */
-  }
-
-  .subscribe-input {
-    width: 100%;                  /* поле повністю по ширині контейнера */
-    max-width: 100%;              /* щоб не обрізалось 398px */
-  }
-
-  .subscribe-btn {
-    width: 165px;                 /* кнопка менша за інпут */
-    align-self: center;           /* центруємо кнопку */
-    padding: 12px 24px;
-  }
-}
-
-/* планшет: 768–1157px */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  /* contacts в хедері колонкою + менший шрифт */
-  .contacts-list {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .contact-link {
-    font-size: 12px;
-  }
-
-  /* h3 у другій секції (features) — 36px як у макеті */
-  .features-title {
-    font-size: 36px;
-    line-height: 1.11;
-  }
-
-  /* текст під заголовком — жирний тільки на планшеті */
-  .features-text {
-    font-weight: 500;
-  }
-}
-
-/* Мобільна адаптація футера */
-@media screen and (max-width: 767px) {
-
-  /* Центруємо весь футер */
-  .footer {
-    text-align: center;
-  }
-
-  .footer-wrap {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    row-gap: 72px;
-  }
-
-  .footer-brand {
-    margin-right: 0;
-  }
-
-  .footer-socials {
-    justify-content: center;
-  }
-
-  /* --- Форма підписки --- */
-  .footer-subscribe {
-    width: 100%;
-    max-width: 398px;
-    margin: 0 auto;
+    margin-left: 0;
   }
 
   .subscribe-form {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 24px;
-    width: 100%;
   }
 
-  /* Довгий інпут */
   .subscribe-input {
-    width: 100%;
-    max-width: 398px;
-    height: 40px;
-  }
-
-  /* Кнопка трохи коротша */
-  .subscribe-btn {
-    width: 165px;
-    height: 40px;
+    width: 264px;
   }
 }
 
@@ -1208,48 +1100,6 @@ body.modal-open {
 
   .menu-toggle {
     display: inline-flex;
-  }
-
-  /* центруємо заголовки у другій секції (features) */
-  .features-title {
-    text-align: center;
-  }
-
-  /* центруємо футер на мобілці */
-  .footer {
-    text-align: center;
-  }
-
-  .footer-wrap {
-    align-items: center;
-  }
-
-  .footer-brand {
-    text-align: center;
-  }
-
-  .footer-socials {
-    justify-content: center;
-  }
-
-  .footer-subscribe {
-    width: 100%;
-  }
-
-  .subscribe-form {
-    align-items: center;
-  }
-
-  /* різний розмір для інпута і кнопки Subscribe */
-  .subscribe-input {
-    width: 100%;
-    max-width: 398px;
-  }
-
-  .subscribe-btn {
-    width: auto;
-    min-width: 165px;
-    padding: 12px 24px;
   }
 }
 
