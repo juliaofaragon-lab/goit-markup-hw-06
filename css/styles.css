@@ -1176,3 +1176,32 @@ body.modal-open {
     text-align: center;
   }
 }
+
+/* FIX: footer subscribe for TABLET + DESKTOP */
+@media screen and (min-width: 768px) {
+
+  .subscribe-input {
+    width: 332px;   /* макет tablet/desktop */
+    height: 40px;
+  }
+
+  /* кнопка коротша */
+  .subscribe-btn {
+    width: 165px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  /* вирівнюємо форму правильно */
+  .subscribe-form {
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;   
+    justify-content: flex-start;
+  }
+
+  /* заголовок Subscribe зліва */
+  .footer-title {
+    text-align: left;
+  }
+}
