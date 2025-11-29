@@ -202,6 +202,15 @@ a {
   .logo {
     margin-right: 76px;
   }
+  
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .contact-link {
+    font-size: 12px;
+  }
 }
 
 /* ========== HERO ========== */
@@ -329,8 +338,12 @@ a {
   }
 
   .features-title {
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  .features-text {
+    font-weight: 500;
   }
 }
 
@@ -630,7 +643,8 @@ a {
 
 /* subscribe */
 .footer-subscribe {
-  width: 453px;
+  width: 100%;
+  max-width: 453px;
 }
 
 .subscribe-label {
@@ -641,6 +655,8 @@ a {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-items: center;
+  width: 100%
 }
 
 .subscribe-input {
@@ -706,6 +722,14 @@ a {
     flex-wrap: wrap;
     gap: 72px 24px;
     align-items: baseline;
+  }
+
+.footer-socials {
+    justify-content: flex-start;
+  }
+
+  .footer-subscribe {
+    width: 453px;
   }
 
   .footer-subscribe {
@@ -1119,6 +1143,17 @@ body.modal-open {
   .nav-list,
   .contacts {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .contacts-list {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .contact-link {
+    font-size: 16px;
   }
 }
 
