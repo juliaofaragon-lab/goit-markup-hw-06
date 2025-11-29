@@ -1101,6 +1101,48 @@ body.modal-open {
   .menu-toggle {
     display: inline-flex;
   }
+
+  /* центруємо заголовки у другій секції (features) */
+  .features-title {
+    text-align: center;
+  }
+
+  /* центруємо футер на мобілці */
+  .footer {
+    text-align: center;
+  }
+
+  .footer-wrap {
+    align-items: center;
+  }
+
+  .footer-brand {
+    text-align: center;
+  }
+
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .footer-subscribe {
+    width: 100%;
+  }
+
+  .subscribe-form {
+    align-items: center;
+  }
+
+  /* різний розмір для інпута і кнопки Subscribe */
+  .subscribe-input {
+    width: 100%;
+    max-width: 398px;
+  }
+
+  .subscribe-btn {
+    width: auto;
+    min-width: 165px;
+    padding: 12px 24px;
+  }
 }
 
 /* планшет+ */
@@ -1116,5 +1158,30 @@ body.modal-open {
   .nav-list,
   .contacts {
     display: flex;
+  }
+}
+
+/* планшет: контакти + друга секція (features) */
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  /* contacts-list колонкою + gap 12 */
+  .contacts-list {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* шрифт контактів 12px */
+  .contact-link {
+    font-size: 12px;
+  }
+
+  /* h3 у другій секції 36px на планшеті */
+  .features-title {
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  /* текст у features жирніший на планшеті */
+  .features-text {
+    font-weight: 500;
   }
 }
