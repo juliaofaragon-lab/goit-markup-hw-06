@@ -445,6 +445,7 @@ a {
 
   .team-item {
     width: calc((100% - 24px) / 2);
+    max-width: 264px;
   }
 }
 
@@ -552,9 +553,11 @@ a {
 }
 
 .footer-wrap {
+  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 72px;
+  align-items: center;
 }
 
 /* brand */
@@ -627,7 +630,7 @@ a {
 
 /* subscribe */
 .footer-subscribe {
-  max-width: 453px;
+  width: 453px;
 }
 
 .subscribe-label {
@@ -668,7 +671,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 165px;
+  width: 165px;
   height: 40px;
   border-radius: 4px;
   border: none;
