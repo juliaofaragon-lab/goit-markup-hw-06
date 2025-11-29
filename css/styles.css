@@ -132,7 +132,7 @@ a {
 
 .logo {
   display: inline-block;
-  margin-right: 0;
+  margin-right: 0; /* базово без відступу, щоб не здувалося на мобілці */
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -299,7 +299,7 @@ a {
 }
 
 .feature-icon {
-  display: none;
+  display: none; /* в макеті іконки тільки з десктопу */
 }
 
 .features-title {
@@ -972,7 +972,7 @@ body.modal-open {
 
 /* кнопка-бургер */
 .menu-toggle {
-  display: none;
+  display: none; /* на мобілці включимо */
   margin-left: auto;
   padding: 0;
   border: none;
@@ -1089,7 +1089,7 @@ body.modal-open {
   gap: 24px;
 }
 
-/* ========== RESPONSIVE ========== */
+/* Показ/приховування на різних екранах */
 
 /* мобілка */
 @media screen and (max-width: 767px) {
@@ -1101,53 +1101,9 @@ body.modal-open {
   .menu-toggle {
     display: inline-flex;
   }
-
-  /* заголовки у секції features по центру */
-  .features-title {
-    text-align: center;
-  }
-
-  /* футер по центру, як у макеті */
-  .footer {
-    text-align: center;
-  }
-
-  .footer-wrap {
-    align-items: center;
-  }
-
-  .footer-brand {
-    text-align: center;
-  }
-
-  .footer-socials {
-    justify-content: center;
-  }
-
-  .footer-subscribe {
-    width: 100%;
-  }
-
-  .subscribe-form {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-  }
-
-  /* інпут ширший */
-  .subscribe-input {
-    width: 100%;
-    max-width: 398px;
-  }
-
-  /* кнопка вужча й по центру */
-  .subscribe-btn {
-    width: 165px;
-  }
 }
 
-/* планшет+ – загальне */
+/* планшет+ */
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
@@ -1160,30 +1116,6 @@ body.modal-open {
   .nav-list,
   .contacts {
     display: flex;
-  }
-}
-
-/* планшет 768–1157: контакти + features */
-@media screen and (min-width: 768px) and (max-width: 1157px) {
-  /* contacts-list колонкою + gap 12 */
-  .contacts-list {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .contact-link {
-    font-size: 12px;
-  }
-
-  /* заголовки у features 36px */
-  .features-title {
-    font-size: 36px;
-    line-height: 1.11;
-  }
-
-  /* текст у features товстіший */
-  .features-text {
-    font-weight: 500;
   }
 }
 
